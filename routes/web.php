@@ -15,3 +15,4 @@ Route::get('/', function () {
     return view('home');
 });
 Route::resource('directories', 'DirectoryController');
+Route::get('/search','DirectoryController@search')->name("search");

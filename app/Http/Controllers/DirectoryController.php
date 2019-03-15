@@ -3,27 +3,29 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Directory;
 
 class DirectoryController extends Controller
 {
     public function home()
     {
-       
+        $directories = Directory::all();
 
-     return view('home', compact('directories'));
+        return view('home', compact('directories'));
     }
 
     public function index()
     {
-      
+    
+        $directories = Directory::all();
 
-     return view('index', compact('directories'));
+        return view('index', compact('directories'));
     }
 
     public function create()
     {
 
-
+        return view('create');
     }
 
     public function store(Request $request)
