@@ -35,7 +35,7 @@
                             <a href="" class=""></a>
                         </li>
                         <!-- Authentication Links -->
-                       
+                     
                         <li class="nav-item">
                                 <a class="nav-link" href="{{ route('directories.create') }}">{{ __('Create') }}</a>
                             </li>

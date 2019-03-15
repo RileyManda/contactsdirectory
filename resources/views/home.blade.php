@@ -7,14 +7,10 @@
                 </div>
 
                 <div class="links">
-                <a href="{{ route('directories.index')}}" class="btn btn-danger">My Directory</a>
-             
-                   <!-- <a href="https://laracasts.com">Search</a>-->
+                <a href="{{ route('directories.index')}}" class="btn btn-light nav-link.active">View Directory</a>
                 </div><!--Links End-->
                 <div> @include('search')</div>
             
             </div><!--Content End-->
-           
-           
         </div><!--flex End-->
-        @endsection
+        @endsectionxp
