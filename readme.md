@@ -12,14 +12,20 @@
 A simple web application developed in php using the Laravel framework 
 
 ## How To SetUp This Project
-Create a Mysql Database
-Edit .env file:
+
+<p>Create a Mysql Database</p>
+<p>Edit .env file:
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=YourPortNumber
 DB_DATABASE=YourDatabase
 DB_USERNAME=riley
 DB_PASSWORD=root
+
+</P>
+
+
+
 
 Create a migration to the database.(php artisan migrate)
 
