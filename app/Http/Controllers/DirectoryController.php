@@ -52,7 +52,7 @@ class DirectoryController extends Controller
             'email_address' => 'required|max:255',
         ]);
         $directory = Directory::create($validatedData);
-   
+      
         return redirect('/directories')->with('success', 'Contact successfully created');
     }
 
@@ -130,8 +130,14 @@ class DirectoryController extends Controller
 
 
    $query = $request->input('query');
-      $directory = Directory::where('first_name','like',"%$query%");
+      $directory = Directory::where('first_name', 'LIKE', '%' . $query . '%')->get();
+
+      if (count ( $query ) > 0)
       return view ('search-results')->with('directories',$directory)-> withQuery($query);
+
+      else 
+      return view ( 'search-results' )->withMessage ( 'No Details found. Try searching again!' );
+
 
       
     }

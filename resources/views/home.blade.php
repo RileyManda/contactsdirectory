@@ -8,7 +8,7 @@
 
                 <div class="links">
                 <a href="{{ route('directories.index')}}" class="btn btn-primary">My Directory</a>
-                    <a href="https://laracasts.com">Search</a>
+                   <!-- <a href="https://laracasts.com">Search</a>-->
                 </div><!--Links End-->
                 <div> @include('search')</div>
             

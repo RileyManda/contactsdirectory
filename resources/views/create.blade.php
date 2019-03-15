@@ -1,7 +1,5 @@
 <!-- create.blade.php -->
-
 @extends('layout')
-
 @section('content')
 <style>
   .uper {
