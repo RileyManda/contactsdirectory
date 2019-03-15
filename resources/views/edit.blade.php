@@ -8,7 +8,7 @@
 </style>
 <div class="card uper">
   <div class="card-header">
-    Edit Contact
+    Edit {{$directory->first_name}}
   </div>
   <div class="card-body">
     @if ($errors->any())
