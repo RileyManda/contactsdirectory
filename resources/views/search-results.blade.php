@@ -31,6 +31,15 @@
             <td>{{$directory->home_number}}</td>
             <td>{{$directory->mobile_number}}</td>
             <td>{{$directory->email_address}}</td>
+
+            <td><a href="{{ route('directories.edit',$directory->id)}}" class="btn btn-primary">Edit</a></td>
+            <td>
+                <form action="{{ route('directories.destroy', $directory->id)}}" method="post">
+                  @csrf
+                  @method('DELETE')
+                  <button class="btn btn-danger" type="submit">Delete</button>
+                </form>
+            </td>
         </tr>
         @endforeach
     </tbody>
