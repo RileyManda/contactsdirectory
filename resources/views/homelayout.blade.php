@@ -6,6 +6,7 @@
         <title>Contact Directory</title>
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css" />
         <!-- Styles -->
         <style>
             html, body {
@@ -62,9 +63,6 @@
     </head>
     <body>
     @yield('content')
-   
-   
-   
- 
+
     </body>
 </html>
