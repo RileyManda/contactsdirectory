@@ -136,6 +136,7 @@ class DirectoryController extends Controller
       return view ('search-results')->with('directories',$directory)-> withQuery($query);
 
       else 
+      
       return view ( 'search-results' )->withMessage ( 'No Details found. Try searching again!' );
 
 

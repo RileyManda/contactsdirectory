@@ -23,6 +23,7 @@
         </tr>
     </thead>
     <tbody>
+
         @foreach($directories as $directory)
         <tr>
             <td>{{$directory->id}}</td>
